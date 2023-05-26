@@ -1,0 +1,18 @@
+{
+    "name": "PagVision",
+    "description": "Extensão criada com o intuito de auxiliar deficientes visuais a realizar pagamentos em compras online.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ],
+    "browser_action": {
+        "default_icon": "imgs/icon.png",
+        "default_title": "PagVision",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": ["tabs", "storage"]
+}
